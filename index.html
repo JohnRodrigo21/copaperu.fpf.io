@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPF | Carnet</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #a60000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            width: 600px; /* Aumentamos el tamaño del card */
+            max-width: 100%;
+        }
+        .card {
+            padding: 20px; /* Agregamos más espacio interno */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            width: 90px;
+        }
+        h3 {
+            margin: 8px 0 0 0;
+            color: #3F4A81;
+            font-weight: normal;
+        }
+        h5 {
+            margin: 0;
+            font-size: 15px;
+            color: #3F4A81;
+            font-weight: normal;
+        }
+        .table-container {
+            overflow-x: auto; /* Permite solo el desplazamiento horizontal */
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 450px; /* Para forzar el scroll en pantallas pequeñas */
+            color: #050505;
+            font-size: 13px;
+        }
+        th {
+            background-color: #d3d3d3;
+            padding: 8px;
+            font-weight: normal;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .photo-cell {
+            text-align: center;
+        }
+        .player-photo {
+            width: 140px; /* Aumentamos un poco la foto */
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="/images/logo_copa.png" alt="Copa Perú" class="logo">
+            <h3>Copa Perú</h3>
+            <h5>Sub Comisión de Fútbol Aficionado FPF</h5>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th colspan="3">FUTBOLISTA</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="7" class="photo-cell">
+                            <img src="images/jugador.jpg" alt="Foto del jugador" class="player-photo">
+                        </td>
+                        <td>NOMBRES:</td>
+                        <td>JHON</td>
+                    </tr>
+                    <tr>
+                        <td>APELLIDOS:</td>
+                        <td>OBREGON JARA</td>
+                    </tr>
+                    <tr>
+                        <td>FECHA DE NAC:</td>
+                        <td>30/01/1994</td>
+                    </tr>
+                    <tr>
+                        <td>CLUB:</td>
+                        <td>JUVENTUD MOYOBAMBA FC JMFC</td>
+                    </tr>
+                    <tr>
+                        <td>NRO DE CARNET:</td>
+                        <td>01971</td>
+                    </tr>
+                    <tr>
+                        <td>DNI:</td>
+                        <td>48201891</td>
+                    </tr>
+                    <tr>
+                        <td>LIGA:</td>
+                        <td>SANTA MARIA DE CHICMO</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
